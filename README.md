@@ -1,40 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🛒 Hecto E-Commerce Website
 
-## Getting Started
+A modern **full-stack e-commerce website** built with **Next.js, TypeScript, Tailwind CSS, and Sanity CMS**.  
+This project demonstrates a complete shopping experience including product listing, cart management, and dynamic content fetching from Sanity.
 
-First, run the development server:
+🌐 Live Demo: https://hecto-hafsarahman-final.vercel.app  
+📂 GitHub Repo: https://github.com/HafsaRahman05/hecto-hafsarahman  
+
+---
+
+## 🚀 Project Overview
+
+This project is a fully functional e-commerce frontend integrated with a headless CMS (Sanity) for dynamic product management.
+
+It includes:
+- Product browsing
+- Product detail pages
+- Shopping cart system
+- Wishlist functionality
+- Blog pages
+- Authentication UI (login page)
+- Responsive UI design
+
+---
+
+## 📁 Folder Structure
+hecto-hafsarahman/
+│
+├── pages/ # Next.js pages (routing system)
+│ ├── api/ # API routes
+│ ├── blog/ # Blog pages
+│ ├── product/ # Product listing pages
+│ ├── cart/ # Shopping cart
+│ ├── wishlist/ # Wishlist system
+│ ├── contact/ # Contact page
+│ ├── shop/ # Shop pages
+│ ├── navbar/ # Navigation component
+│ ├── footer/ # Footer component
+│ └── index.tsx # Homepage
+│
+├── public/ # Static assets (images, icons)
+│
+├── script/
+│ └── import-data.mjs # Data import script for Sanity
+│
+├── src/
+│ ├── app/ # App routing (Next.js app directory)
+│ └── sanity/ # Sanity CMS configuration & data fetching
+│
+├── styles/ # Global CSS & Tailwind styles
+│
+├── sanity.config.ts # Sanity project configuration
+├── sanity.cli.ts # Sanity CLI setup
+├── tailwind.config.ts # Tailwind configuration
+├── next.config.ts # Next.js configuration
+└── tsconfig.json # TypeScript configuration
+
+
+---
+
+## ⚙️ Technologies Used
+
+- ⚛️ Next.js (React Framework)
+- 🟦 TypeScript
+- 🎨 Tailwind CSS
+- 🧠 Sanity CMS (Headless CMS)
+- 📦 Node.js
+- 🔗 REST / GROQ Queries
+- 🧾 Vercel Deployment
+
+---
+
+## ✨ Features
+
+- 🛍️ Product listing & filtering
+- 🔍 Product detail pages
+- 🛒 Add to cart functionality
+- ❤️ Wishlist system
+- 📰 Blog pages integration
+- 📱 Fully responsive design
+- ⚡ Fast performance (Next.js SSR/SSG)
+- ☁️ Dynamic content from Sanity CMS
+
+---
+
+## 🔄 How It Works
+
+1. Product data is stored in **Sanity CMS**
+2. Next.js fetches data using GROQ queries
+3. Pages are rendered dynamically (SSR/SSG)
+4. User interacts with cart & wishlist in frontend
+5. UI updates instantly without reload
+
+---
+
+## 🧪 Getting Started
+
+Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/HafsaRahman05/hecto-hafsarahman.git
+cd hecto-hafsarahman
+```
+Install dependencies:
+```bash
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Open:
+```bash
+http://localhost:3000
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 🌍 Deployment
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+This project is deployed on **Vercel**
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To deploy your own version:
 
-## Learn More
+- Connect GitHub repo to Vercel  
+- Add environment variables (Sanity keys)  
+- Click Deploy 🚀  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 👩‍💻 Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Hafsa Rahman**  
+Software Engineering Student  
+Focused on Full Stack & Data Science Development  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⭐ Future Improvements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- Payment gateway integration (Stripe)  
+- User authentication (NextAuth)  
+- Admin dashboard for products  
+- Advanced filtering & search  
+- Backend order management system  
