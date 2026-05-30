@@ -24,6 +24,7 @@ It includes:
 ---
 
 ## 📁 Folder Structure
+```bash
 hecto-hafsarahman/
 │
 ├── pages/ # Next.js pages (routing system)
@@ -55,7 +56,7 @@ hecto-hafsarahman/
 ├── next.config.ts # Next.js configuration
 └── tsconfig.json # TypeScript configuration
 
-
+```
 ---
 
 ## ⚙️ Technologies Used
